@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <Description>Fully managed .Net Standard library that reads local git repository content.</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/frblondin/DotGit/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/frblondin/DotGit</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.0.28">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SourceLink.Copy.PdbFiles" Version="2.8.3" privateAssets="all" />
+    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.3" privateAssets="all" />
+  </ItemGroup>
+
+</Project>
